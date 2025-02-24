@@ -3,19 +3,33 @@
 <a href="other-careers.html"> Other Coding Careers </a>
 
 <style>
-    a {
-     text-decoration: none;
+  a {
+    text-decoration: none;
     color: rgb(107, 120, 152);
     border: 1px solid rgb(63, 74, 118);
     border-radius: 0.3em;
     padding-left: 1em;
     padding-right: 1em;
     text-align: center;
- 
-    }
-  
-    a:hover {
-      color: white;
-      background: rgb(53, 75, 108);
-    }
+    margin-right: 10;
+
+  }
+
+  a:hover {
+    color: white;
+    background: rgb(53, 75, 108);
+  }
+
+    body {
+    display: grid;
+    grid: " h    h    h  " 3em
+          " .    m    .  " auto
+          " f    f    f  " 5em
+          / 1fr  5fr  1fr;
+  }
+
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
   </style>
